@@ -124,3 +124,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Page transition styles */
+.page-transition {
+  opacity: 0;
+  transition: opacity 420ms cubic-bezier(.2,.9,.2,1);
+}
+.page-transition.enter {
+  opacity: 1;
+}
+
+/* Subtle global motion for interactive elements */
+:where(button, a, input, .btn) {
+  transition: transform 160ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition,
+  :where(button, a, input, .btn) {
+    transition: none !important;
+    transform: none !important;
+  }
+}

@@ -10,6 +10,8 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { BlueSiteHeader } from "@/components/blue-header"
+import MotionWrapper from "@/components/motion-wrapper"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -27,11 +29,12 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SiteHeader />
+      <BlueSiteHeader />
 
       <main className="flex-1">
-        {/* Contact Form Section */}
-        <section className="bg-[#ffd500] py-16 lg:py-24">
+        <MotionWrapper className="">
+          {/* Contact Form Section */}
+          <section className="bg-[#ffd500] py-16 lg:py-24">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Left Side - Lorem ipsum */}
@@ -108,7 +111,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
 
         {/* Location Section */}
         <section className="bg-white py-16 lg:py-24">
@@ -143,10 +146,10 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
 
-        {/* Extended Footer with Logo and Menu */}
-        <section className="bg-[#ffd500] py-16">
+          {/* Extended Footer with Logo and Menu */}
+          <section className="bg-[#ffd500] py-16">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-12">
               {/* Logo */}
@@ -237,7 +240,8 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
+        </MotionWrapper>
       </main>
 
       <SiteFooter />

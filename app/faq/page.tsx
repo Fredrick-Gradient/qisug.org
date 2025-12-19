@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { BlueSiteHeader } from "@/components/blue-header"
 
 const faqCategories = [
   { id: "admission", label: "Admission" },
@@ -66,7 +67,7 @@ export default function FAQPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SiteHeader />
+      <BlueSiteHeader />
 
       <main className="flex-1 bg-white">
         <div className="container mx-auto px-4 py-16 lg:py-24">

@@ -1,11 +1,12 @@
 import Image from "next/image"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { BlueSiteHeader } from "@/components/blue-header"
 
 export default function AcademicsPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <SiteHeader />
+      <BlueSiteHeader />
 
       <main className="flex-1 bg-[#ffd500]">
         <div className="container mx-auto px-4 py-16 lg:py-24">
