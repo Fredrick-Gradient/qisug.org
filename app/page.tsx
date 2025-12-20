@@ -7,6 +7,9 @@ import MotionWrapper from "@/components/motion-wrapper"
 import { Button } from "@/components/ui/button"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { ApplySectionProduction } from "@/components/home/apply-component"
+import { Resources } from "@/components/home/resources"
+import { CTA } from "@/components/home/cta"
 
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -109,7 +112,7 @@ export default function HomePage() {
                   <Link href="/admissions">
                     <Button
                       size="lg"
-                      className="bg-[#3d4fd4] text-white hover:bg-[#3d4fd4]/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-md shadow-lg transition-all hover:shadow-xl"
+                      className="bg-[#ef] text-white hover:bg-[#3d4fd4]/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-md shadow-lg transition-all hover:shadow-xl"
                     >
                       Apply Today
                     </Button>
@@ -154,7 +157,7 @@ export default function HomePage() {
                     <Link href="/admissions">
                       <Button
                         size="lg"
-                        className="bg-[#3d4fd4] text-white hover:bg-[#3d4fd4]/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-md shadow-lg transition-all hover:shadow-xl"
+                        className="bg-[#EFBF04] text-white hover:bg-[#3d4fd4]/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6  transition-all "
                       >
                         Apply Today
                       </Button>
@@ -198,7 +201,9 @@ export default function HomePage() {
           </motion.div>
         </MotionWrapper>
       </main>
-
+<ApplySectionProduction/>
+<Resources/>
+<CTA/>
       <SiteFooter />
     </div>
   )
